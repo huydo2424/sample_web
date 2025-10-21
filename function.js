@@ -96,7 +96,7 @@ function login() {
             name: log_name.value
         }]
         localStorage.setItem("currentUser", JSON.stringify(currentUser))
-        window.location="b6.html"
+        window.location="index.html"
         check_currentUser()
     } else {
         alert("Sai thông tin đăng nhập")
@@ -119,4 +119,5 @@ function logout() {
     localStorage.removeItem("currentUser")
     document.getElementById("btnLogout").innerHTML = ""
     location.reload()
+
 }
